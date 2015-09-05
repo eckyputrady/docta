@@ -72,20 +72,23 @@
       <h1>
         Terima kasih!
       </h1>
-      <p>
+      <p id="sign-up-succ-text" style="display: none;">
+        Kami akan mengabarkan Anda via <b><span id="via-email">E-Mail</span></b> apabila layanan kami sudah aktif.
+      </p>
+      <p id="explanation-text">
         Layanan kami akan segera aktif agar Anda bisa dengan mudah mencari dokter yang tepat.
       </p>
-      <div class="row">
+      <div id="email-form" class="row">
         <div class="col-xs-12 col-lg-8 col-lg-offset-2">
           <div class="panel panel-default">
             <div class="panel-body">
-              <form>
+              <form onsubmit="signUp(); return false;">
                 <h2>Kabari saya apabila layanan sudah siap!</h2>
                 <div class="form-group">
                   <label for="E-Mail">E-Mail</label>
                   <input type="email" class="form-control input-lg" id="email" placeholder="tinggalkan e-mail Anda">
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Kirim</button>
+                <button id="email-submit" type="submit" class="btn btn-primary btn-lg btn-block">Kirim</button>
               </form>
             </div>
           </div>
@@ -120,4 +123,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+    <script src="search.js"></script>
   </body>
